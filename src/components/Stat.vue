@@ -8,7 +8,7 @@
   }>();
 
   const finalAmount = computed(() => props.amount ?? 5);
-  const transformClass = computed(() => `transform ${props.transform}`.trim());
+  const transformClass = computed(() => `transform ${props.transform ?? ''}`.trim());
 </script>
 
 <template>
